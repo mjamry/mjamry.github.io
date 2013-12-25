@@ -1,0 +1,458 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+#page
+{
+    min-height:100%;
+    position:relative;
+}
+
+/*----------------------------------------------FOOTER--------------------------------------------*/
+
+#footer
+{
+    background-color: #ddd;
+    font-size: 9pt;
+    color: gray;
+    border-top:1px solid darkgray;
+    width:100%;
+    height:140px;
+    position:absolute;
+    bottom:0;
+}
+
+#footer A
+{
+    color: gray;
+}
+
+#footer A:hover
+{
+    color: darkslategray;
+}
+
+#footer-content
+{
+    width: 800px;
+    margin:auto;
+    padding:10px;
+}
+
+.footer-line
+{
+    border:0;
+    height:1px;
+    color:darkgray;
+    background-color: darkgray;
+}
+
+.footer-licencing
+{
+    text-align: center;
+}
+
+/*------------------------------------------------HEADER------------------------------------------*/
+
+#header
+{
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    margin:0;
+    border-bottom:1px solid darkgray;
+}
+
+#header-content
+{
+    width:800px;
+    height:100%;
+    margin:auto;
+    padding:10px;
+}
+
+#header-content-logo
+{
+    width:200px;
+    float:left;
+}
+
+#header-session-details
+{
+    width:200px;
+    float:right;
+}
+
+#page-content
+{
+    width: 900px;
+    background-color: white;
+    border: #ddd solid 1px;
+    padding-bottom: 150px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*-----------------------------INPUT------------------------*/
+#input-form
+{
+    width: 800px;
+    height: 70px;
+    margin:auto;
+}
+
+#media-location
+{
+    width: 400px;
+    height: 40px;
+    padding:0;
+}
+
+.playlist-button
+{
+    height: 40px;
+}
+
+/*-----------------------------PLAYLIST---------------------*/
+#playlist
+{
+    width:450px;
+    height:303px;
+    /*TODO do it with JS*/
+    overflow: auto;
+}
+
+.playlist-item-name, .playlist-item-details
+{
+    height:20px;
+    margin-top:3px;
+    font-size: 12pt;
+    float:left;
+    color: #444;
+    width:100%;
+}
+
+.playlist-item-details
+{
+    color:#777;
+}
+
+.playlist-item-cover
+{
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-top:5px;
+    margin-right:5px;
+    border:0;
+}
+
+#playlist-progressbar
+{
+    height:5px;
+    background-color:#999;
+    display: none;
+}
+
+.playlist-item-icons
+{
+    margin-top:2px;
+}
+
+.playlist-item-time
+{
+    margin-top:4px;
+    float:left;
+    font-size: 10pt;
+    width:100px;
+}
+
+.playlist-item-like, .playlist-item-remove
+{
+    color: #aaa;
+    margin-top:10px;
+}
+
+.playlist-item-like:hover, .playlist-item-remove:hover
+{
+    color: red;
+}
+
+.playlist-item-even, .playlist-item-odd
+{
+    height:50px;
+    padding-left:10px;
+    border-bottom: 1px solid #999;
+    border-top:  1px solid #fff;
+    border-left: 5px solid #888;
+    color: #444;
+}
+
+.playlist-item-even
+{
+    background-color: #eee;
+}
+
+.playlist-item-odd
+{
+    background-color: #eee;
+}
+
+.playlist-item-odd:hover, .playlist-item-even:hover
+{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/*------------------------------MEDIA------------------*/
+#media-content
+{
+    width:900px;
+    margin:auto;
+}
+
+#media-player
+{
+    width: 450px;
+    height: 338px;
+    background-image:url('../media/online_scrobbler_test_screen.png');
+}
+
+#media-player-playback
+{
+    float:left;
+    width:500px;
+}
+
+#media-player-playback-controls-container
+{
+    height:50px;
+    width:900px;
+    margin:auto;
+}
+/*----------------------------PLAYBACK---CONTROLS-------*/
+#media-player-controls
+{
+    background-color: #88c6d3;
+    float:left;
+    width:270px;
+}
+
+#playback-control
+{
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*---------------------------VOLUME---CONTROL------------*/
+#playback-control-volume-container
+{
+    float:left;
+    width:130px;
+}
+
+.volume-control-indicator-container
+{
+    height:35px;
+    background-color:#88c6d3;
+    position: relative;
+}
+
+.volume-control-indicator
+{
+    background-color: #129FEA;
+    height:100%;
+    position:absolute;
+    bottom:0;
+}
+/*---------------------------PLAYLIST----CONTROLS--------*/
+#media-playlist-control
+{
+    background-color: #88c6d3;
+}
+
+#playlist-control
+{
+    width:300px;
+    height:35px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.playlist-control-selected
+{
+    color: white;
+}
+
+/*----------------------------PROGRESS---BARS----------*/
+#playback-progress-container
+{
+    top:0;
+    position: relative;
+    width:500px;
+    height:35px;
+}
+
+.playback-progress-bar-container,
+.playback-data-bar-container,
+.playback-details-container
+{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+
+.playback-progress-bar-container,
+.playback-data-bar-container
+{
+    background-color: darkslategray;
+    width:100%;
+}
+
+.playback-data-bar-container
+{
+    background-color: #222222;
+}
+
+.playback-progress-bar-container
+{
+    background-color: #2d2d2d;
+}
+
+.playback-data-bar-container,
+.playback-data-bar
+{
+    height:2px;
+}
+
+.playback-progress-bar-container,
+.playback-progress-bar
+{
+    height:35px;
+}
+
+.playback-progress-bar
+{
+    background-color: lightseagreen;
+}
+
+.playback-data-bar
+{
+    background-color: lightgreen;
+}
+
+
+/*---PROGRESS-DETAILS----*/
+.playback-details-container
+{
+    font-size: 10pt;
+    color:lightgrey;
+    display: block;
+}
+
+.playback-time,
+.playback-details
+{
+    height:20px;
+    width:100%;
+    margin: auto;
+}
+
+.playback-details
+{
+
+}
+
+.playback-time
+{
+    display:none;
+}
+
+
+/*----------------------------LOGGER----------------------*/
+#logger-content
+{
+    height:430px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#logger-header
+{
+    width:500px;
+    margin: auto;
+    font-size: 10pt;
+}
+
+.logger-info, .logger-error, .logger-warning, .logger-debug
+{
+    font-size: 9pt;
+    width:800px;
+    margin: auto;
+}
+
+.logger-info
+{
+    background-color: lightyellow;
+}
+
+.logger-error
+{
+    background-color: lightcoral;
+}
+
+.logger-debug
+{
+    background-color: lightblue;
+}
+
+.logger-warning
+{
+    background-color: lightpink;
+}
+
+/*--------------------------------TESTS---------------------------*/
+#testing-environment
+{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid darkgray;
+    background-color: gray;
+}
+
+#testing-helper
+{
+    width:500px;
+    margin: auto;
+    font-size: 9pt;
+}
+
+#error-report
+{
+    font-size: 9pt;
+    background-color: lightsalmon;
+}
+
+#feature-report
+{
+    font-size:9pt;
+    background-color: mediumseagreen;
+}
+
+.testing-environment-hide-button
+{
+    float: right;
+    color: darkred;
+}
+
+.test-environment-color
+{
+    color:darkred;
+}
+
+
+
+
